@@ -8,8 +8,8 @@ services:
       - MYSQL_DATABASE=local_traccar
       - MYSQL_USER=traccar
       - MYSQL_PASSWORD=traccar
-    expose:
-      - 3306
+    ports:
+      - "3306:3306"
     volumes:
       - mysql-traccar-datavolume:/var/lib/mysql
 
